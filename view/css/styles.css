@@ -1,0 +1,127 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato&display=swap');
+
+body {
+    background-color: #111926;
+    color: #ffff;
+    font-family: 'Lato', sans-serif; 
+    margin: 0px;
+}
+
+header {
+    background-color: #223040;
+    padding: 20px 0px;
+}
+
+header div.center { /*targets all elements in a div element with the class name center under the header element */
+    display: flex;
+    justify-content: space-between;
+}
+
+div.center {
+    max-width: 700px;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+header a { /*targets all anchor elements inside the header element */
+    color: white;
+    text-decoration: none;
+    height: 30px;
+    line-height: 30px;
+    display: inline-block;
+}
+
+a.social-link svg { /*targets an svg element that is an anchor tag with the class name social-link */
+    fill: #fff;
+    height: 30px;
+    color: rgba(255, 255, 255, 0.7);
+}
+
+footer div a {
+    margin-left: 20px;
+}
+
+header nav { /* targets all nav elements under the header element */
+    display: flex;
+}
+
+header nav a { /* targets all anchor elements inside nav elements under the header element*/
+    padding: 0 10px;
+    color: rgba(255, 255, 255, 0.5)
+}
+
+header a.nav-link.active { /*targets all anchor tags with both classes nav-link and active*/
+    color: #fff;
+    text-decoration: underline;
+}
+
+div.intro {
+    display: flex; /*making the text on the left and photo on right! basically inline-block*/
+    gap: 20px; /*since flex makes everything in the div a flex item, then using the gap or justify-content property effects the space BETWEEN each flex item!*/
+    justify-content: space-between;
+    
+}
+
+div.intro img {
+    width: 200px;
+    max-width: 200px;
+    margin-top: 40px;
+}
+
+div.intro p {
+    margin: 0;
+    align-self: center;
+}
+
+h1 {
+    background-color: #223040;
+    margin: 0px;
+    padding-top: 60px;
+    font-size: 50px;
+    line-height: 5px
+}
+
+footer {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+    border-top: 5px solid #557;
+    padding: 20px 0px;
+}
+
+footer p {
+    margin: 0px;
+    align-self: center;
+}
+
+footer a {
+    text-decoration: none;
+}
+
+div.contact p{
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    padding: 10px;
+    margin: 0;
+}
+
+div.contact:first-of-type {
+    margin-top: 20px;
+}
+
+div.project-1 {
+    margin: 50px auto;
+    margin-right: 50px;
+    text-align: right;
+}
+
+div.project-2 {
+    text-align: left;
+    margin-left: 30px;
+}
+
+div.project-3 {
+    margin: 100px auto;
+    text-align: center;
+}
